@@ -1,0 +1,49 @@
+.app-shell {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 28px 20px 60px;
+}
+
+.content-grid {
+  display: grid;
+  gap: 22px;
+}
+
+.panel-row {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 20px;
+}
+
+.panel {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 22px;
+  padding: 22px;
+  box-shadow: var(--shadow);
+}
+
+.panel-header h2 {
+  margin: 0 0 18px;
+  font-size: 1.4rem;
+}
+
+.form-panel,
+.filter-panel {
+  display: flex;
+  flex-direction: column;
+}
+
+.inventory-panel {
+  padding-bottom: 30px;
+}
+
+@media (max-width: 860px) {
+  .panel-row {
+    grid-template-columns: 1fr;
+  }
+
+  .app-shell {
+    padding: 20px 16px 40px;
+  }
+}
